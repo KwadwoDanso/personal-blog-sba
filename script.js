@@ -74,3 +74,12 @@ function validateForm() {
 
     return valid;
 }
+
+// Render all posts to the page
+function renderPosts() {
+    postList.innerHTML = "";
+
+    if (posts.length === 0) {
+        postList.innerHTML = "<p>No posts yet. Add one above!</p>";
+        return;
+    }
